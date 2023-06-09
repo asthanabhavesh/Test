@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                sh 'docker/sdk up'
+                sh '$ docker run'
             }
         }
     }
