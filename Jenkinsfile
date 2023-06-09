@@ -1,9 +1,10 @@
 pipeline {
-    agent { docker { image 'node:18.16.0-alpine' } }
+    agent { dockerfile true }
     stages {
-        stage('build') {
+        stage('Test') {
             steps {
-                sh 'docker run'
+                sh 'node --version'
+                sh 'svn --version'
             }
         }
     }
