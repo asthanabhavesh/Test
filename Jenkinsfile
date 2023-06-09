@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                sh '$ docker run'
+                sh 'docker run'
             }
         }
     }
